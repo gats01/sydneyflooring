@@ -1,0 +1,81 @@
+:root {
+  --bg: #f7f8fa;
+  --text: #1f2937;
+  --brand: #0f766e;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: var(--white);
+  padding: 4rem 0;
+}
+.subtitle { max-width: 620px; }
+.highlights { padding-left: 1.2rem; }
+.btn {
+  display: inline-block;
+  background: var(--brand);
+  color: var(--white);
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.section { padding: 3rem 0; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card h3 { padding: 1rem; margin: 0; font-size: 1rem; }
+.packages { background: #ecfdf5; }
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.package-card {
+  background: var(--white);
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+.featured { border: 2px solid var(--brand); }
+.quote-form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 560px;
+}
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
